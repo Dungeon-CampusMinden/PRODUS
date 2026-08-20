@@ -4,6 +4,7 @@
 <h1 align="center">Dungeon</h1>
 <p align="center"><img src="https://github.com/Dungeon-CampusMinden/Dungeon/blob/master/doc/img/banner.png?raw=true" alt="Banner"></p>
 
+
 The Dungeon is a multifaceted project for the gamification of educational content.
 
 You can find an [interesting report](https://www.hsbi.de/presse/pressemitteilungen/informatik-studierende-am-campus-minden-entwickeln-2d-rollenspiel-zum-lehren-und-lernen) on our project in the news section of Bielefeld University of Applied Sciences (04 April 2024, in German), as well as [another press release](https://www.hsbi.de/presse/pressemitteilungen/hsbi-informatiker-entwickeln-ein-tool-mit-dem-die-erstellung-von-escape-rooms-fuer-die-lehre-auch-ohne-programmier-kenntnisse-gelingt) (19 December 2025, in German).
