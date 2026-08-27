@@ -52,13 +52,12 @@ Es sollte eine Ausgabe wie `openjdk version "25.x.x"` erscheinen.
 
 1. Gehe auf die **Releases-Seite**: [https://github.com/Dungeon-CampusMinden/Dungeon/releases](https://github.com/Dungeon-CampusMinden/Dungeon/releases)
 2. Lade die Datei **`Blockly-web.jar`** herunter (unter "Assets" beim neuesten Release).
-3. Starte das Dungeon per **Doppelklick** auf die JAR-Datei.
+3. Starte das Dungeon per **Doppelklick** auf die JAR-Datei. Die Blockly-Oberfläche öffnet sich automatisch.
    - Alternativ: Öffne ein Terminal, navigiere zum Download-Ordner und führe aus:
      ```bash
      java -jar Blockly-web.jar
      ```
-4. Öffne deinen Browser und gehe zu: [http://localhost:8081/](http://localhost:8081/)
-5. Die Blockly-Oberfläche erscheint - du kannst sofort loslegen!
+4. Du kannst sofort loslegen!
 
 ---
 
@@ -157,11 +156,8 @@ Das Spiel startet und zeigt das erste Rätsel.
 
 ### Wo wird gearbeitet? - Der Arbeitsbereich im Detail
 
-Die Schüler:innen arbeiten ausschließlich im Package **`riddles`** innerhalb des Projekts. Der Pfad im Repository ist:
-
-```
-advancedDungeon/src/portal/riddles/
-```
+Die Schüler:innen arbeiten ausschließlich im Package **`riddles`** innerhalb des Projekts:
+[`advancedDungeon/src/portal/riddles/`](../../advancedDungeon/src/portal/riddles/).
 
 In diesem Ordner befinden sich mehrere Java-Dateien, die jeweils einem Rätsel im Dungeon entsprechen. Jede Datei enthält eine oder mehrere Methoden, die eine `UnsupportedOperationException` werfen - das ist der Platzhalter, den die Schüler:innen durch eigenen Code ersetzen müssen.
 
@@ -249,7 +245,9 @@ private void move(int x, int y) {
 ### Advanced Dungeon
 
 - **Hot-Reloading nutzen:** Code-Änderungen werden automatisch übernommen. Speichere die Datei und die Änderung greift sofort im laufenden Spiel - kein Neustart nötig.
-- **Nur im `riddles`-Package arbeiten:** Die Schüler:innen sollten ausschließlich Dateien im `riddles`-Package verändern. Der restliche Code ist das Framework und sollte nicht angefasst werden.
+- **Nur im `riddles`-Package arbeiten:** Die Schüler:innen sollten ausschließlich Dateien in
+  [`advancedDungeon/src/portal/riddles/`](../../advancedDungeon/src/portal/riddles/)
+  verändern. Der restliche Code ist das Framework und sollte nicht angefasst werden.
 - **`UnsupportedOperationException` ist der Wegweiser:** Suche in den Dateien nach `throw new UnsupportedOperationException(...)` - genau an diesen Stellen muss eigener Code geschrieben werden.
 - **Hilfsklassen nutzen:** Das Package `abstraction` und die Klassen `Tools`, `LightBridgeFactory`, `LightWallFactory`, `TractorBeamFactory` usw. bieten vorgefertigte Methoden, die bei der Lösung helfen. Nutze die Autovervollständigung der IDE, um zu sehen, welche Methoden verfügbar sind.
 - **Gradle starten, nicht direkt die Main-Klasse:** Das Spiel muss zwingend über Gradle gestartet werden (`./gradlew runPortal`), damit das Hot-Reloading funktioniert. Ein direkter Start über die IDE-Run-Konfiguration funktioniert nicht korrekt.

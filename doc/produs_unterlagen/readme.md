@@ -52,13 +52,12 @@ You should see output like `openjdk version "25.x.x"`.
 
 1. Go to the **Releases page**: [https://github.com/Dungeon-CampusMinden/Dungeon/releases](https://github.com/Dungeon-CampusMinden/Dungeon/releases)
 2. Download the file **`Blockly-web.jar`** (under "Assets" in the latest release).
-3. Start the dungeon by **double-clicking** the JAR file.
+3. Start the dungeon by **double-clicking** the JAR file. The Blockly interface opens automatically.
    - Alternatively: Open a terminal, navigate to the download folder and run:
      ```bash
      java -jar Blockly-web.jar
      ```
-4. Open your browser and go to: [http://localhost:8081/](http://localhost:8081/)
-5. The Blockly interface appears - you can start right away!
+4. You can start right away!
 
 ---
 
@@ -157,11 +156,8 @@ The game starts and shows the first puzzle.
 
 ### Where do you work? - The workspace in detail
 
-Students work exclusively in the **`riddles`** package within the project. The path in the repository is:
-
-```
-advancedDungeon/src/portal/riddles/
-```
+Students work exclusively in the **`riddles`** package within the project:
+[`advancedDungeon/src/portal/riddles/`](../../advancedDungeon/src/portal/riddles/).
 
 This folder contains several Java files, each corresponding to a puzzle in the dungeon. Each file contains one or more methods that throw an `UnsupportedOperationException` - this is the placeholder that students need to replace with their own code.
 
@@ -249,7 +245,9 @@ private void move(int x, int y) {
 ### Advanced Dungeon
 
 - **Use hot-reloading:** Code changes are applied automatically. Save the file and the change takes effect immediately in the running game - no restart needed.
-- **Only work in the `riddles` package:** Students should only modify files in the `riddles` package. The rest of the code is the framework and should not be touched.
+- **Only work in the `riddles` package:** Students should only modify files in
+  [`advancedDungeon/src/portal/riddles/`](../../advancedDungeon/src/portal/riddles/).
+  The rest of the code is the framework and should not be touched.
 - **`UnsupportedOperationException` is your guide:** Search the files for `throw new UnsupportedOperationException(...)` - these are exactly the places where your own code needs to be written.
 - **Use the helper classes:** The `abstraction` package and classes like `Tools`, `LightBridgeFactory`, `LightWallFactory`, `TractorBeamFactory` etc. offer pre-built methods that help with solving the puzzles. Use your IDE's auto-completion to see which methods are available.
 - **Start via Gradle, not the main class directly:** The game must be started via Gradle (`./gradlew runPortal`) for hot-reloading to work. Starting directly via the IDE's run configuration does not work correctly.

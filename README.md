@@ -38,7 +38,7 @@ extension sends Java code to the running Dungeon instance. This creates a gradua
 from visual blocks to real programming languages, including editor workflows, files, and code
 execution through an extension.
 
-<p align="center"><img src="doc/press_kit/blockly/blockly_VS_Code.png" alt="Java Dungeon with VS Code"></p>
+<p align="center"><img src="doc/press_kit/blockly/Blockly_VS_Code.gif" alt="Java Dungeon with VS Code"></p>
 
 ### Advanced Dungeon
 
@@ -47,7 +47,12 @@ prepared Java classes directly inside the project. Puzzles involving portals, li
 laser walls, switches, and game logic make it visible how code creates behavior in a game
 world.
 
-<p align="center"><img src="doc/press_kit/portal/Portal_footage_1.gif" alt="Advanced Dungeon Portal Gameplay"></p>
+<table>
+  <tr>
+    <td><img src="doc/press_kit/portal/Portal_riddle_1.png" alt="Advanced Dungeon portal riddle with cube"></td>
+    <td><img src="doc/press_kit/portal/Portal_riddle_2.png" alt="Advanced Dungeon portal riddle with light bridge"></td>
+  </tr>
+</table>
 
 ## Usage
 
