@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="430" viewBox="0 0 960 430" role="img" aria-labelledby="title desc">
+  <title id="title">Workshop participants by module</title>
+  <desc id="desc">Bar chart showing 294 total participants: 144 in Java Dungeon, 115 in Blockly Dungeon, and 35 in Advanced Dungeon.</desc>
+  <rect width="960" height="430" fill="#ffffff"/>
+  <text x="48" y="58" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#202124">Workshop Participants</text>
+  <text x="48" y="91" font-family="Inter, Arial, sans-serif" font-size="16" fill="#5f6368">294 participants across the three PRODUS workshop modules</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g transform="translate(48 135)">
+      <text x="0" y="32" font-size="19" font-weight="700" fill="#202124">Java Dungeon</text>
+      <rect x="190" y="5" width="622" height="42" fill="#4e79a7"/>
+      <text x="832" y="34" font-size="22" font-weight="700" fill="#202124">144</text>
+    </g>
+
+    <g transform="translate(48 215)">
+      <text x="0" y="32" font-size="19" font-weight="700" fill="#202124">Blockly Dungeon</text>
+      <rect x="190" y="5" width="497" height="42" fill="#f28e2b"/>
+      <text x="707" y="34" font-size="22" font-weight="700" fill="#202124">115</text>
+    </g>
+
+    <g transform="translate(48 295)">
+      <text x="0" y="32" font-size="19" font-weight="700" fill="#202124">Advanced Dungeon</text>
+      <rect x="190" y="5" width="151" height="42" fill="#59a14f"/>
+      <text x="361" y="34" font-size="22" font-weight="700" fill="#202124">35</text>
+    </g>
+  </g>
+
+  <line x1="238" y1="378" x2="860" y2="378" stroke="#dadce0" stroke-width="1"/>
+  <g font-family="Inter, Arial, sans-serif" font-size="13" fill="#5f6368">
+    <text x="232" y="402">0</text>
+    <text x="439" y="402">50</text>
+    <text x="643" y="402">100</text>
+    <text x="850" y="402">150</text>
+  </g>
+</svg>
