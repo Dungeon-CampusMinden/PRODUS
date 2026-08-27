@@ -19,8 +19,6 @@ framework, PRODUS developed three workshop formats for different levels of prior
 - **Advanced Dungeon** offers more complex Java tasks, advanced puzzles, and AI-adjacent
   concepts.
 
-<p align="center"><img src="doc/press_kit/blockly/blockly_gif.gif" alt="Blockly Dungeon Gameplay"></p>
-
 ## Workshop Modules
 
 ### Blockly Dungeon
@@ -29,7 +27,7 @@ Blockly Dungeon is designed for beginners. Learners control the game character t
 browser-based Blockly interface. This allows them to experiment with sequences, conditions,
 loops, and variables without first having to deal with programming-language syntax.
 
-<p align="center"><img src="doc/press_kit/blockly/Blockly_App.png" alt="Blockly Dungeon App"></p>
+<p align="center"><img src="doc/press_kit/blockly/blockly_gif.gif" alt="Blockly Dungeon Gameplay" width="900"></p>
 
 ### Java Dungeon
 
@@ -38,7 +36,7 @@ extension sends Java code to the running Dungeon instance. This creates a gradua
 from visual blocks to real programming languages, including editor workflows, files, and code
 execution through an extension.
 
-<p align="center"><img src="doc/press_kit/blockly/Blockly_VS_Code.gif" alt="Java Dungeon with VS Code"></p>
+<p align="center"><img src="doc/press_kit/blockly/Blockly_VS_Code.gif" alt="Java Dungeon with VS Code" width="900"></p>
 
 ### Advanced Dungeon
 
