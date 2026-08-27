@@ -59,61 +59,8 @@ jobs:
                   name: vs-code-extension
                   path: doc/produs_unterlagen/blockly-code-runner-*.vsix
 
-    buildExecutables:
-        runs-on: ${{ matrix.os }}
-        strategy:
-            matrix:
-                include:
-                    - os: windows-latest
-                      platform_name: windows-x86_64
-                    - os: ubuntu-latest
-                      platform_name: linux-x86_64
-        steps:
-            -   name: Checkout Code
-                uses: actions/checkout@v7
-
-            -   name: Set up JDK
-                uses: actions/setup-java@v5
-                with:
-                    java-version: '25'
-                    distribution: 'temurin'
-            -   name: Make gradlew executable
-                run: chmod +x gradlew
-
-            -   name: Build with JLink
-                run: ./gradlew :blockly:jpackageImage
-
-            -   name: Archive Executable
-                # zip the folder
-                run: |
-                    if [ "${{ runner.os }}" == "Windows" ]; then
-                      7z a Blockly-desktop-${{ matrix.platform_name }}.zip  ./blockly/build/jpackage/blockly
-                    else
-                      tar -czf Blockly-desktop-${{ matrix.platform_name }}.tar.gz -C blockly/build/jpackage blockly
-                    fi
-                shell: bash
-
-
-            -   name: Build with JLink 2
-                run: ./gradlew :blockly:jpackageImageWeb
-
-            -   name: Archive Executable
-                # zip the folder
-                run: |
-                    if [ "${{ runner.os }}" == "Windows" ]; then
-                      7z a Blockly-web-${{ matrix.platform_name }}.zip  ./blockly/build/jpackage/blockly-web
-                    else
-                      tar -czf Blockly-web-${{ matrix.platform_name }}.tar.gz -C blockly/build/jpackage blockly-web
-                    fi
-                shell: bash
-
-            -   name: Upload Artifacts
-                uses: actions/upload-artifact@v7
-                with:
-                    name: executable-${{ matrix.os }}
-                    path: Blockly-*
     deploy:
-        needs: [build, upload_extension, buildExecutables]
+        needs: [build, upload_extension]
         runs-on: ubuntu-latest
         permissions:
             contents: write
@@ -131,7 +78,7 @@ jobs:
             - name: Create GitHub Release
               run: |
                 TAG="v1.0.${{ github.run_number }}"
-                gh release create "$TAG" *.jar *.vsix *.zip *.tar.gz \
+                gh release create "$TAG" *.jar *.vsix \
                   --title "Dungeon Games" \
                   --notes-file ".github/workflows/releaseInstructions.md" \
                   --draft=true \

@@ -20,7 +20,7 @@ jobs:
           java-version: '25'
           distribution: 'temurin'
       - name: Build with Gradle
-        run: ./gradlew assemble
+        run: ./gradlew jar :blockly:jarDesktop :blockly:jarWeb
 
   license_check:
     name: License Check
