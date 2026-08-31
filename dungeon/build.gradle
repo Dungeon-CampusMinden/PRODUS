@@ -1,12 +1,6 @@
 plugins {
     id 'java-library'
     id 'com.google.protobuf'
-    id 'application'
-}
-
-application {
-    mainClass = "starter.BasicStarter"
-    applicationName = "dungeon"
 }
 
 dependencies {
@@ -122,6 +116,6 @@ tasks.named('checkstyleTest') {
 */
 tasks.named('jar', Jar) {
     manifest {
-        attributes 'Main-Class': application.mainClass.get()
+        attributes 'Main-Class': 'starter.BasicStarter'
     }
 }
