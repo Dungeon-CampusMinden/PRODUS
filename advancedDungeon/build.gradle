@@ -4,7 +4,6 @@ plugins {
 
 dependencies {
     implementation project(':dungeon')
-    implementation project(':portal')
 }
 
 sourceSets.main.java.srcDirs = ['src/']
@@ -12,7 +11,6 @@ sourceSets.main.resources.srcDirs = ['assets/']
 
 processResources {
     from new File(project(':dungeon').projectDir, '/assets')
-    from new File(project(':portal').projectDir, '/src/assets')
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 

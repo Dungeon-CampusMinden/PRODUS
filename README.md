@@ -43,7 +43,7 @@ execution through an extension.
 Advanced Dungeon is aimed at learners with prior programming experience. Participants edit
 prepared Java classes directly inside the project. Puzzles involving portals, light bridges,
 laser walls, switches, and game logic make it visible how code creates behavior in a game
-world.
+world. The Portal mechanics and riddles are part of the `advancedDungeon` module.
 
 <table>
   <tr>
@@ -57,9 +57,9 @@ world.
 All variants require **Java 25**. Ready-to-use builds are available on the
 [GitHub Releases page](https://github.com/Dungeon-CampusMinden/Dungeon/releases).
 
-- **Start Blockly Dungeon:** Download `Blockly-web.jar` from the latest release, start it by
-  double-clicking it or by running `java -jar Blockly-web.jar`, then open
-  [http://localhost:8081/](http://localhost:8081/) in a browser.
+- **Start Blockly Dungeon:** Download `Blockly-web.jar` from the latest release and start it
+  by double-clicking it or by running `java -jar Blockly-web.jar`. The Blockly interface
+  opens automatically.
 - **Start Java Dungeon:** Download `Blockly-desktop.jar` and the VS Code extension (`.vsix`)
   from the latest release. Start the JAR, install the extension in Visual Studio Code via
   "Install from VSIX...", and send Java code to the game with the command

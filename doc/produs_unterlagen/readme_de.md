@@ -111,7 +111,7 @@ Im Java Dungeon löst man die gleichen Dungeon-Level wie in der Web-Version, sch
 
 ### Was ist das?
 
-Das Advanced Dungeon ist ein eigenständiges Dungeon-Projekt für Fortgeschrittene. Hier arbeitet man nicht mehr über eine externe Oberfläche, sondern bearbeitet direkt Java-Klassen in einer richtigen Entwicklungsumgebung (IDE). Das Spiel nutzt Hot-Reloading: Änderungen im Code werden automatisch übernommen, **ohne das Spiel neu starten zu müssen**.
+Das Advanced Dungeon ist ein eigenständiges Dungeon-Projekt für Fortgeschrittene. Hier arbeitet man nicht mehr über eine externe Oberfläche, sondern bearbeitet direkt Java-Klassen in einer richtigen Entwicklungsumgebung (IDE). Die Portal-Mechaniken und Rätsel sind Teil des `advancedDungeon`-Moduls. Das Spiel nutzt Hot-Reloading: Änderungen im Code werden automatisch übernommen, **ohne das Spiel neu starten zu müssen**.
 
 ### Was muss installiert werden?
 

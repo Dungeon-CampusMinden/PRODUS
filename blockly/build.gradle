@@ -1,11 +1,5 @@
 plugins {
     id 'java-library'
-    id 'application'
-}
-
-application {
-    mainClass = "client.Client"
-    applicationName = "blockly"
 }
 
 repositories {
@@ -14,7 +8,7 @@ repositories {
 
 dependencies {
     implementation project(':dungeon'), 'com.github.javaparser:javaparser-symbol-solver-core:3.28.1'
-    implementation project(':portal')
+    implementation project(':advancedDungeon')
     // JUnit 4 and Mockito for testing
     testImplementation supportDependencies.junit
     testRuntimeOnly supportDependencies.junitLauncher
@@ -27,7 +21,7 @@ sourceSets.test.java.srcDirs = ['test/']
 
 processResources {
     from new File(project(':dungeon').projectDir, '/assets')
-    from new File(project(':portal').projectDir, '/src/assets')
+    from new File(project(':advancedDungeon').projectDir, '/assets')
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
@@ -66,7 +60,7 @@ tasks.register("npmBuild", Exec) {
 def configureBaseJar(jar) {
     jar.with {
         dependsOn project(':dungeon').tasks.named('jar')
-        dependsOn project(':portal').tasks.named('jar')
+        dependsOn project(':advancedDungeon').tasks.named('jar')
         dependsOn tasks.named('npmBuild')
 
         from sourceSets.main.output

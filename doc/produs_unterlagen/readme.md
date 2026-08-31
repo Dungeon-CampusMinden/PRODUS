@@ -111,7 +111,7 @@ In the Java Dungeon you solve the same dungeon levels as in the web version, but
 
 ### What is it?
 
-The Advanced Dungeon is a standalone dungeon project for advanced users. Here you no longer work through an external interface but instead edit Java classes directly in a real development environment (IDE). The game uses hot-reloading: code changes are applied automatically **without needing to restart the game**.
+The Advanced Dungeon is a standalone dungeon project for advanced users. Here you no longer work through an external interface but instead edit Java classes directly in a real development environment (IDE). The Portal mechanics and riddles are part of the `advancedDungeon` module. The game uses hot-reloading: code changes are applied automatically **without needing to restart the game**.
 
 ### What needs to be installed?
 
